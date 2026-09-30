@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Counter & Temperature Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    //PART 1: Number Counter ui
+    <div class="section">
+        <h2>Number Counter</h2>
+        <label id="countLabel">0</label><br><br>
+        <button id="decreaseBtn">Decrease</button>
+        <button id="resetBtn">Reset</button>
+        <button id="increaseBtn">Increase</button>
+    </div>
+
+    // PART 2: Temperature Converter UI
+    <div class="section">
+        <h2>Temperature Converter</h2>
+        <input type="number" id="textBox" placeholder="Enter temperature"><br><br>
+        
+        <input type="radio" id="toFahrenheit" name="unit">
+        <label for="toFahrenheit">Celsius ➔ Fahrenheit</label><br>
+        
+        <input type="radio" id="toCelsius" name="unit">
+        <label for="toCelsius">Fahrenheit ➔ Celsius</label><br><br>
+        
+        <button id="submitBtn">Submit</button>
+        <p id="resultLabel"></p>
+    </div>
+
+    // linking the JS file
+    <script src="PROJECT1.JS"></script>
+</body>
+</html>
